@@ -158,5 +158,3 @@ function iniSimulacion(usuarios){
             alert("Fue aceptado para recibir un prestamo. Nos estaremos contactando con usted");
     }
 }
-
-"hola"
