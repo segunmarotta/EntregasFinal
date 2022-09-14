@@ -85,6 +85,25 @@ function estadoCasado (estadoCivil){
         }
 }
 
+//Add User to HTML
+for (const usuario of usuarios) {
+    let sec = document.getElementById("usuario");
+    let cont = document.createElement("div");
+
+    cont.innerHTML = `<h3>${usuario.fName} ${usuario.lName} </h3>
+                    <p>Edad: ${usuario.age}</p>
+                    <p>Documento: ${usuario.document}</p>
+                    <p>Estado Civil: ${usuario.estadoCivil}</p>
+                    <p>Ingreso: ${usuario.income}</p>
+                    <p>Gastos: ${usuario.gastos}</p>
+                    <p>Relacion de dependencia: ${usuario.rDependencia}</p>
+                    <p>Actividad: ${usuario.actividad}</p>
+                    <p>Monto a Solicitar: ${usuario.montoASolicitar}</p>
+                    <p>ID: ${usuario.id}</p>`;
+    sec.appendChild(cont);
+    
+}
+
 
 //Ver UN usuario
 function verUsuario(usuarios){
